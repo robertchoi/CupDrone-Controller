@@ -291,8 +291,8 @@ uint8_t run_menu_0( uint8_t cur_state, int menu_sel )
     case STATE_MENU_MODE:
       Key.use_joypad = true;
 
-      if ( joy_mode == 0 ) lcd_draw_str( 0, 0, "MODE LEFT" );
-      else                 lcd_draw_str( 0, 0, "MODE RIGHT");
+      if ( joy_mode == 0 ) lcd_draw_str( 0, 0, "MODE 2" );
+      else                 lcd_draw_str( 0, 0, "MODE 1");
 
       if ( Key.get_enter() || Key.get_right() )
       {
